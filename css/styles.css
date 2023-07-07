@@ -1,3 +1,8 @@
+:root {
+  --color-headings: #ffffff;
+  --color-text: #e5e5e5;
+}
+
 *,
 *::before,
 *::after {
@@ -5,11 +10,17 @@
 }
 
 * {
+  font-family: "Inter";
+  font-weight: normal;
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  line-height: 1.5;
+  background: #141619;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -37,4 +48,92 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  margin: 0;
+}
+
+/* Utlities */
+.container {
+  max-width: 1056px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+
+.nav__wrapper {
+  position: fixed;
+  background: #141619;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.2rem 6.4rem;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav__list ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__item {
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+.nav__contact {
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero div {
+  position: relative;
+  margin-top: 15.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 58.4rem;
+  height: 39.2rem;
+}
+
+.hero div h1 {
+  color: var(--color-headings);
+  font-size: 7.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero div h1:first-child {
+  position: absolute;
+  top: -4.3rem;
+}
+
+.hero div h1:nth-child(2) {
+  position: absolute;
+  top: 8.6rem;
+}
+
+.hero__text {
+  color: var(--color-text);
+  position: absolute;
+  top: 20.3rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.hero button {
+  text-transform: uppercase;
+  width: 19.15rem;
+  height: 5.8rem;
+  font-size: 1.9rem;
+  position: absolute;
+  top: 33.4rem;
+  background-image: linear-gradient(to bottom right, #665dcd, #d2ab67);
 }
