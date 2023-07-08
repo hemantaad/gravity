@@ -75,16 +75,29 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 .nav__item {
   font-size: 1.5rem;
   color: var(--color-text);
+  text-transform: uppercase;
+  margin-right: 2rem;
 }
 
 .nav__contact {
+  display: inline-flex;
   font-size: 1.5rem;
   color: var(--color-text);
+}
+
+.nav__contact::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background: linear-gradient(to bottom right, #665dcd, #d2ab67);
+  border-radius: 50%;
+  margin-right: 1rem;
 }
 
 /* Hero */
@@ -135,5 +148,5 @@ h6 {
   font-size: 1.9rem;
   position: absolute;
   top: 33.4rem;
-  background-image: linear-gradient(to bottom right, #665dcd, #d2ab67);
+  background: linear-gradient(to bottom right, #665dcd, #d2ab67);
 }
