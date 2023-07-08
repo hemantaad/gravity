@@ -47,14 +47,48 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--color-headings);
   overflow-wrap: break-word;
   margin: 0;
 }
 
+h1 {
+  font-size: 7.6rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 5.6rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.9rem;
+  line-height: 1.5;
+}
+
 /* Utlities */
+
 .container {
   max-width: 1056px;
   margin: 0 auto;
+}
+
+.border-right {
+  border-right: 1px solid #fff;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #fff;
+}
+
+.active {
+  background: linear-gradient(to bottom right, #665dcd, #d2ab67);
 }
 
 /* Navbar */
@@ -104,6 +138,7 @@ h6 {
 .hero {
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 
 .hero div {
@@ -117,9 +152,6 @@ h6 {
 }
 
 .hero div h1 {
-  color: var(--color-headings);
-  font-size: 7.6rem;
-  font-weight: 500;
   text-align: center;
 }
 
@@ -149,4 +181,43 @@ h6 {
   position: absolute;
   top: 33.4rem;
   background: linear-gradient(to bottom right, #665dcd, #d2ab67);
+}
+
+/* About */
+.about {
+  text-align: center;
+}
+
+.about__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 25.2rem;
+  margin-bottom: 6.4rem;
+}
+
+.about__text {
+  font-size: 2rem;
+  max-width: 61.2rem;
+}
+
+.about__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 35.6rem;
+  width: 100%;
+}
+
+.about__body-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.5rem 2rem;
+}
+
+.about__body-block p {
+  max-height: 5.5rem;
+  font-weight: 400;
 }
