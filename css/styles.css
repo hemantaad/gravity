@@ -226,6 +226,14 @@ p {
   font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+  .about__body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: auto;
+  }
+}
+
 /* Market */
 
 .market {
@@ -291,6 +299,16 @@ p {
   position: absolute;
   top: 15.2rem;
   left: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .market {
+    justify-content: center;
+  }
+
+  .market__media {
+    width: auto;
+  }
 }
 
 /* Associates */
