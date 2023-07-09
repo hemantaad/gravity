@@ -500,3 +500,38 @@ p {
   top: 10rem;
   left: -25rem;
 }
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 36.62rem;
+}
+
+.footer__wrapper,
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__wrapper {
+  margin-bottom: 6rem;
+}
+
+.footer__left h4 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.footer__left p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.footer__body p {
+  font-size: 1.4rem;
+}
